@@ -8,7 +8,6 @@ const killButton = document.querySelector('#remover-selecionado');
 const list = document.querySelector('#lista-tarefas');
 
 // Verificar o funcionamento da saveList e eraseList. Havia feito de uma forma muito mais complexa, mas o code review do Esdras mostrou que seria muito mais simples!
-
 window.onload = function load() {
   list.innerHTML = localStorage.getItem('list');
   selectItem();
@@ -43,7 +42,6 @@ function moveUp() {
 }
 
 function goMoveDown() {
-  console.log('goMoveDown funcionando!')
   let getSelected = document.querySelector('#selected');
   let afterGetSelected = getSelected.nextElementSibling;
   if (afterGetSelected === null) {
@@ -76,7 +74,7 @@ function changeColor(item) {
     selectedItem[index].style.backgroundColor = '';
     selectedItem[index].id = '';
   }
-  item.target.style.backgroundColor = 'rgb(128, 128, 128)';
+  item.target.style.backgroundColor = '#540b0e';
   item.target.id = 'selected';
 }
 
@@ -117,7 +115,7 @@ function eraseList() {
 function removeListItem() {
   const selectedItem = document.querySelectorAll('.tarefa');
   for (let index = 0; index <= selectedItem.length - 1; index += 1) {
-    if (selectedItem[index].style.backgroundColor === 'rgb(128, 128, 128)') {
+    if (selectedItem[index].style.backgroundColor === 'rgb(84, 11, 14)') {
       const getlist = document.querySelector('#lista-tarefas');
       getlist.removeChild(selectedItem[index]);
     }

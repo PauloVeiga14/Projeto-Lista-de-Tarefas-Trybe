@@ -1,11 +1,114 @@
-body {
-  background-color: lightsteelblue;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.tarefa {
-  background-color: lightsteelblue;
+body {
+  background-color: #fff3b0;
+}
+
+header {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 60px;
+  color: #fff3b0;
+}
+
+.box-style {
+  margin: 40px;
+  border: 3px solid #e09f3e;
+  background-color: #9e2a2b;
+  border-radius: 3px;
+  padding: 15px;
+  width: 80% auto;
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
+  color: #e09f3e;
+  font-style: italic;
+  margin-bottom: 20px;
 }
 
 .completed {
   text-decoration: line-through;
 }
+
+.line-content {
+  margin: 10px;
+  padding: 10px;
+}
+
+.input-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 50%;
+  padding: 5px;
+  font-size: 15px;
+  margin: 5px;
+  border: 2px solid #72090d;
+  border-radius: 3px;
+}
+
+#criar-tarefa {
+  margin: 10px;
+  padding: 5px;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  margin-top: 10px;
+  width: 53%;
+  font-size: 25px;
+  color: #fff3b0;
+  padding: 3px;
+  font-family: 'Bree Serif', cursive;
+}
+
+.botoes-que-alteram {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 5px;
+  margin: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border-color: #540b0e;
+  background-color: #fff3b0;
+}
+
+/* .lista-completa {
+  width: 60%;
+  margin: auto;
+}
+
+input {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+button {
+  padding: 5px;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+li {
+  margin: 5px;
+  font-size: 20px;
+} */
